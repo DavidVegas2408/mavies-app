@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import MoviesContextProvider from './contexts/MoviesContext';
+import MovieContextProvider from './contexts/MovieContext';
+import MoviesResults from "./components/MoviesResults";
+import MovieDetails from "./components/MovieDetails";
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import NotFound from './components/NotFound';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+  <BrowserRouter>
+    <Header />
+    <Switch>
+
+      <Route exact path="/">
+        <MoviesContextProvider>
+          <MoviesResults />
+        </MoviesContextProvider>
+      </Route>
+
+      <Route exact path="/movie/detail/:movie_id">
+        <MovieContextProvider>
+          <MovieDetails />
+        </MovieContextProvider>
+      </Route>
+
+      <Route component={NotFound} />
+
+    </Switch>
+    <Footer />
+  </BrowserRouter>
+);
 
 export default App;

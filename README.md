@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado útilizando la API de [TMDB](https://www.themoviedb.org/documentation/api).
+
+## Tecnologías 
+Para la Creación del proyecto se utilizó React.js con Hooks (UseState, useEffect, useContext). Como herramienta de diseño se utilizó [MATERIAL-UI](https://v4.mui.com/) Y CSS3
+
+In the project directory, you can run:
 
 ## Available Scripts
 

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.movie-card img {
+    width: 100%;
+    max-height: 399px;
+}
+
+.grid-movie {
+    margin: 1rem auto 10px auto;
+    max-width: 1200px;
+    padding: 0 5px;
+}
+
+Footer {
+    text-align: center;
+    color: white;
+    background-color: #031d33;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.buttonPrimary {
+    text-decoration: none;
+}
+
+.movie-detail-container {
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.subtitle {
+    margin: 0 5px 10px 0;
+    display: inline-block;
+    background: #d7d7d7;
+    padding: 4px 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.link, a:visited, h3 {
+    text-decoration: none;
+    color: black;
+}
+
+.img-companies {
+    display: flex;
+    align-items: center;
+}
+
+.img-companies img {
+    margin: 0 10px 0 0;
+}
+
+.title-video {
+    font-size: 1.3rem;
+}
+
+.not-found {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.MuiTextField-root {
+    width: 95%;
+}
+
+.container-search {
+    padding: 0 5px;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-search button {
+    width: 80px;
+    height: 80px;
+}
+
+.video-responsive {
+    width: 800px;
+}
+
+.image-movie-container img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-movie-container {
+    display: flex;
+    justify-content: center;
+}
